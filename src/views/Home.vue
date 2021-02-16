@@ -1,13 +1,18 @@
 <template>
- <h1>home</h1>
+  <Search />
+  <Table />
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { ref, defineComponent } from "vue";
+import Table from "../components/Table.vue";
+import Search from "../components/Search.vue";
 
 export default defineComponent({
-  name: 'Home',
+  name: "Home",
   components: {
-  }
-})
+    Table,
+    Search,
+  },
+});
 </script>

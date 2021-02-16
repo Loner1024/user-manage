@@ -4,14 +4,15 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { ref,defineComponent, onMounted } from 'vue'
 import NavBar from './components/NavBar.vue'
+import axios from 'axios'
 
 export default defineComponent({
   name: 'App',
     components: {
       NavBar
-  }
+  },
 })
 </script>
 
